@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: underline;
+}
+
+h1 {
+  background: yellow;
+  border: 10px solid black;
+  /*
+  border-width: 10px;
+  border-style: solid;
+  border-color: black;
+  */
+  color: red;
+  height: 200px;
+  margin: 50px;
+  padding: 20px;
+  width: 500px;
+}
+
+li {
+  display: inline;
+  font-style: italic;
+  /* unnecessary:
+  list-style: none;
+  removes bullets, but inline already
+  does that.
+  */
+}
+
+.special {
+  color: green;
+}
+
+.special.crazy {
+  font-size: 100px;
+  font-family: "Comic Sans MS";
+}
+
+li a {
+  color: orange;
+}

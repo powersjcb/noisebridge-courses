@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+h1 {
+  background: yellow;
+  border: 10px solid black;
+  color: red;
+  height: 200px;
+  margin: 50px;
+  padding: 20px;
+  width: 500px;
+}
+li {
+  font-style: italic;
+}
+.beans {
+  color: red;
+  font-family: "Comic Sans MS";
+  font-size: 100px;
+}
+.active {
+  color: green;
+}
+ul a {
+  color: orange;
+}
+li {
+  display: inline;
+}
+/*
+h1.active {
+  font-size: 10000000px;
+}
+
+h1 .active {
+  font-size: 1px;
+}
+
+h1, h2.active .beans {
+  font-size: 200%;
+}
+
+h1, .active {
+  font-size: 5em;
+}
+*/
+/* <h1 class="active"> */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: underline;
+}
+/*
+rule
+selector
+declaration
+property
+value
+*/
