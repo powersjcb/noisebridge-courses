@@ -39,7 +39,7 @@ RSpec.describe MyHash do
       expect(some_hash[i]).to eq(i.to_s)
     end
 
-    
+
     expect(some_hash.instance_variable_get("@size")).to eq(20)
 
 

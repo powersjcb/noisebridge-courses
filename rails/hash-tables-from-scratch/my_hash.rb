@@ -10,7 +10,7 @@ class MyHash
 
   def initialize
     @size = 10
-    @array = [[]]*@size
+    @array = Array.new(@size) { [] }
     @count = 0
   end
 
@@ -19,7 +19,7 @@ class MyHash
 
     @count += 1
 
-    resize if (count.to_f/@size > LOAD_FACTOR)
+    resize if (@count.to_f / @size > LOAD_FACTOR)
     #entering values to hash table
     slot_number = h(key)
     dynamic_array = @array[h(key)]
@@ -54,9 +54,9 @@ class MyHash
     end
 
     def resize
-      @size = @size * 2
       old_array = @array
-      @array = [[]]*@size
+      @size *= 2
+      @array = Array.new(@size) { [] }
       @count = 0
       old_array.each do |dynamic_array|
         dynamic_array.each do |key, value|
