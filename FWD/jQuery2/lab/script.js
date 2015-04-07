@@ -8,7 +8,9 @@ var $doList = $('.to-do-list');
 var copyNewItem = function () {
   var insertedItem = $doList.children().first().clone();
   var newText = $('.new-field').val()
+  
   insertedItem.text(newText)
+
   $doList.append(insertedItem);
 
 };

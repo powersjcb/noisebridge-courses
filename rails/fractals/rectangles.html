@@ -1,0 +1,33 @@
+<html>
+  <canvas id="canvas" height=400 width=400></canvas>
+
+  <script type="text/javascript">
+    var height = 400
+
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    // console.log(ctx);
+
+    ctx.rect(0,0,height,height);
+    ctx.stroke()
+
+    function drawFractal (width) {
+          ctx.beginPath();
+          ctx.moveTo( width / 2 , 0  );
+          ctx.lineTo( width / 2 , 400);
+          ctx.stroke();
+
+      if ( width > 2 ) {
+        drawFractal(width / 2);
+        someOtherThing(width /2);
+      };
+    };
+
+    function someOtherThing(width) {
+      console.log(width)
+    }
+    drawFractal(400)
+
+
+  </script>
+</html>
